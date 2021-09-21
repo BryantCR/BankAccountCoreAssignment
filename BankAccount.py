@@ -36,6 +36,6 @@ class BankAccount:
     def printAllAccountsInfo(cls):
         print(f"This is the information for all the accounts")
         for account in cls.initInfo:
+            account.user.printUserInfo()
             account.allInfo()
-
 
